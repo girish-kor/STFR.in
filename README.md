@@ -15,8 +15,8 @@ npm run lint     # ESLint
 ## How It Works
 
 - Username from URL path (`/alice` → `alice`)
-- Fetches question from `https://dev-api.stfr.in/api/web/v1/question/:username`
-- Sends messages to `https://dev-api.stfr.in/api/web/v1/question/:username/answer/`
+- Fetches question from `http://localhost:8080/api/web/v1/question/:username`
+- Sends messages to `http://localhost:8080/api/web/v1/question/:username/answer/`
 - Uses `allorigins.win` proxy (replace for production)
 
 ## Structure
@@ -45,4 +45,5 @@ Output: `dist/`
 Works with: Netlify, Vercel, GitHub Pages
 
 ⚠️ Configure CORS and remove public proxy for production
+
 # STFR.in

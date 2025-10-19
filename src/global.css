@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /* Baloo 2 */
+  font-family: 'Baloo 2';
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02);
+  }
+}
+
+textarea::placeholder {
+  color: #999999 !important;
+  font-weight: 400 !important;
+}
+
+textarea:focus::placeholder {
+  color: #bbbbbb !important;
+}
+
+.loading-spinner {
+  border-top-color: currentColor;
+}
+
+.typing-animation {
+  animation: typing 2s ease-in-out infinite;
+}
+
+.spin-animation {
+  animation: spin 2s linear infinite;
+}
+
+.pulse-animation {
+  animation: pulse 1.2s infinite;
+}
